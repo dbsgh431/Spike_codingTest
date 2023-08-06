@@ -1,4 +1,4 @@
-# DFS 함수 정의
+# DFS_BFS 함수 정의
 def dfs(graph, v, visited):
     # 방문 처리
     visited[v] = True
