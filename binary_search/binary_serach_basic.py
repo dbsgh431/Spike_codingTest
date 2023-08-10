@@ -14,4 +14,3 @@ def binary_search(array, target, start, end):
     return None
 
 
-print(binary_search([0,1,2,3,4,5,6,7], 3, 0, 8))
