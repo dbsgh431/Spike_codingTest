@@ -21,7 +21,7 @@ array = generate_N_list_with_space()
 
 amount = int(input())
 
-start, end = min(len(array), min(array)), max(len(array), max(array))
+start, end = 1 , max(array)
 
 if sum(array) <= amount:
     print(end)
@@ -38,6 +38,7 @@ else:
                 total_budget += mid
 
         if total_budget == amount:
+            end = mid
             break
 
         if total_budget < amount:
