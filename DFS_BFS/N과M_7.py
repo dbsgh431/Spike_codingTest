@@ -16,10 +16,8 @@ def bactrack(n_input : list):
 
     for j in range(len(n_input)):
         result.append(n_input[j])
-        n_input.pop(j)
         bactrack(n_input)
-        n_input.insert(j, result.pop())
-
+        result.pop()
     return
 
 
